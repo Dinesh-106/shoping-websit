@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIYANSH ONLINE SHOPING</title>
+    <link rel="stylesheet" href="C:\Users\VCS\Desktop\shoping web\ai_studio_code.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>DIYANSH ONLINE SHOPING</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="https://www.instagram.com/di_n.x_?igsh=MnpsdjVsdW1hN3Rp" target="_blank">INSTAGRAM</a></li>
+
+                <li><a href="https://www.linkedin.com/in/dinesh-g-21460b30a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LINKEDIN</a></li>
+
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="cart-icon"><a href="#"><span id="cart-count">0</span>🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>ONLINE SHOPING </h2>
+                <p>Enjoy your time shopping with us!</p>
+                <button class="shop-now-btn">SCROLL DOWN </button>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="WhatsAppImage2024-05-28at3.25.45PM_9998f9b9-0b79-4b87-817a-e11389282390.webp" alt="Product Image 1">
+                    <h3>T-SHIRT COLLECTION</h3>
+                    <p class="price">₹299.00-₹899.00</p>
+                    <button class="add-to-cart-btn" data-product-id="1" onclick="handleBuyNow(this)">
+  CLICK HERE
+</button>
+
+<script>
+  function handleBuyNow(button) {
+    const productId = button.getAttribute('data-product-id');
+    
+    // 🛒 Simulate adding to cart (you can replace this with your actual logic)
+    console.log("Adding product to cart. Product ID:", productId);
+
+    // ✅ Redirect after the action (instant or delayed)
+    window.location.href = "buy link.html"; // change to your actual link
+  }
+</script>
+
+
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="c:\Users\VCS\Desktop\shoping web\Rado_m_ban.webp" alt="Product Image 2">
+                    <h3>WATCH COLLECTION</h3>
+                    <p class="price">₹299.00-₹9999.00</p>
+                    <button class="add-to-cart-btn" data-product-id="3" onclick="redirectToWatchPage()">CLICK HERE</button>
+
+<script>
+  function redirectToWatchPage() {
+    // Redirect to the local file (only works on your local machine)
+  window.location.href = "file:///C:/Users/VCS/Desktop/shoping%20web/watch.html";
+
+  }
+</script>
+
+
+<div class="product-card">
+    <img src="images.jpeg" alt="Product Image 3">
+    <h3>GROCERY ITEMS </h3>
+    <p class="price">₹19.00-₹999.00</p>
+    <button class="add-to-cart-btn" data-product-id="3" onclick="redirectToGadgetsPage()">CLICK HERE</button>
+</div>
+
+<script>
+  function redirectToGadgetsPage() {
+    // Redirect to the local file on your machine
+    window.location.href = "C:/Users/VCS/Desktop/shoping web/GROCCERY.html";
+  }
+</script>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MyShop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

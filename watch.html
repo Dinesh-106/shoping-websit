@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSH ONLINE SHOPING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2196F3; /* A common tech/accessories blue */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures button is at bottom */
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 200px; /* Adjust height for watch images */
+            object-fit: contain; /* Ensures the whole watch is visible */
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+            flex-shrink: 0; /* Prevents image from shrinking */
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-card .description {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .product-card .price {
+            font-size: 1.3em;
+            color: #FF5722; /* A strong accent color for price */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .product-card select {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .product-card button {
+            background-color: #2196F3;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin-top: auto; /* Pushes the button to the bottom */
+        }
+        .product-card button:hover {
+            background-color: #1976D2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Watch Collection</h1>
+        <div class="product-grid">
+
+           <!-- Watch Card 1 -->
+<div class="product-card">
+    <img src="c:\Users\VCS\Desktop\shoping web\1-date01-green-toovus-boys-original-imahe5nghcfg9huf.webp" alt="Classic Analog Watch">
+    <h3>Classic Analog Watch</h3>
+    <p class="description">Elegant design with a leather strap. Water-resistant.</p>
+    <p class="price">₹361.00</p>
+    
+    <select name="color">
+        <option value="">Select Color</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+        <option value="black">Black</option>
+    </select>
+    
+    <a href="https://www.flipkart.com/toovus-green-dial-analog-watch-men-classic-stainless-steel-strap-look-boys/p/itm83918713dbeb6?pid=WATHE5NGZZ3BFH93&lid=LSTWATHE5NGZZ3BFH93AKZGVE&marketplace=FLIPKART&q=Classic+Analog+Watch&store=r18%2Ff13&srno=s_1_12&otracker=search&otracker1=search&fm=Search&iid=en_uxHQQMvXwRMLanO5r9eAJjH1TBI31Je1QPoiFhv5_jaA72LsR8uM_DLU-0ziDoxHLF5I2S_c4RHEcx_e7OuYzA%3D%3D&ppt=sp&ppn=sp&ssid=1inxjy6erk0000001758791834189&qH=dcb0a7d04ad9127f" target="_blank">
+        <button>BUY NOW</button>
+    </a>
+</div>
+            <!-- Watch Card 2 -->
+<div class="product-card">
+    <img src="c:\Users\VCS\Desktop\shoping web\download (3).jpeg" alt="Sport Smartwatch">
+    <h3>Sport Smartwatch X300</h3>
+    <p class="description">Fitness tracker, heart rate monitor, notifications.</p>
+    <p class="price">₹779.00</p>
+
+    <select name="color">
+        <option value="">Select Color</option>
+        <option value="black">Black</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+    </select>
+
+    <a href="https://www.flipkart.com/xtouch-x9-bluetooth-smartwatch-1-3-inch-hd-display-spo2/p/itmd30455ab0a759?pid=SMWGKC2AGQ7MPV4K&lid=LSTSMWGKC2AGQ7MPV4KEKATBW&marketplace=FLIPKART&q=Sport+Smartwatch+X300&store=ajy%2Fbuh&srno=s_1_34&otracker=search&otracker1=search&fm=Search&iid=aa9efc9c-32cb-4bdc-a533-8f3ed9a2b95d.SMWGKC2AGQ7MPV4K.SEARCH&ppt=sp&ppn=sp&ssid=abx7avuv800000001758792037000&qH=aca1e678083d21eb" target="_blank">
+        <button>BUY NOW</button>
+    </a>
+</div>
+<!-- Watch Card 3 -->
+<div class="product-card">
+    <img src="images/download (4).jpeg" alt="Retro Digital Watch">
+    <h3>Retro Digital Watch</h3>
+    <p class="description">Nostalgic design with modern features. Durable build.</p>
+    <p class="price">₹248.50</p>
+
+    <select name="color">
+        <option value="">Select Color</option>
+        <option value="silver">Silver</option>
+        <option value="gold">Gold</option>
+    </select>
+
+    <a href="https://www.flipkart.com/exitance-watch-digital-boys/p/itmcd2be4146bae2?pid=WATH9QNKVJXGHFRC&lid=LSTWATH9QNKVJXGHFRC2DPRIL&marketplace=FLIPKART&q=Retro+Digital+Watch&store=r18%2Ff13&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=0e2a24d9-cd01-4849-a78c-7e2a00d30887.WATH9QNKVJXGHFRC.SEARCH&ppt=sp&ppn=sp&ssid=h0srdrgg680000001758792403966&qH=e4f975a8998400bd" target="_blank">
+        <button>BUY NOW</button>
+    </a>
+</div>
+
+
+            <!-- Watch Card 4 -->
+            <div class="product-card">
+                <img src="c:\Users\VCS\Desktop\shoping web\download (5).jpeg" alt="Luxury Chronograph Watch">
+                <h3>Luxury Chronograph</h3>
+                <p class="description">Precision engineering, sapphire glass, stainless steel.</p>
+                <p class="price">₹2999.99</p>
+                <select name="color">
+                    <option value="">Select Finish</option>
+                    <option value="polished">Polished Steel</option>
+                    <option value="brushed">Brushed Steel</option>
+                </select>
+                  <a href="https://www.flipkart.com/cristiano-aillen-ca-9838-analog-watch-men/p/itmb96b670749414?pid=WATHFQ7VCYKHFDY6&lid=LSTWATHFQ7VCYKHFDY62MSFSF&marketplace=FLIPKART&q=Luxury+Chronograph&store=r18%2Ff13&srno=s_1_32&otracker=search&otracker1=search&fm=Search&iid=en_pK44pjnNew0r2vgNkfH2QKNqRuHdLa0t6FWLnEEp-eUABaduGkjyLGUnRcQhbtHAZFptwPbyhV-Pbs8RCDaVEw%3D%3D&ppt=sp&ppn=sp&ssid=kn7jqkausw0000001758792785386&qH=a8d177dbe7470ebc" target="_blank">
+        <button>BUY NOW</button>
+               
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

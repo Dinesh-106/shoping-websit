@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANSH ONLING SHOPING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50; /* Classic grocery green */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 180px; /* Slightly shorter for groceries */
+            object-fit: contain;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 15px;
+            flex-shrink: 0;
+        }
+        .product-card h3 {
+            margin: 10px 0 5px; /* Less margin at bottom */
+            color: #333;
+        }
+        .product-card .unit {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .product-card .price {
+            font-size: 1.3em;
+            color: #FF5722; /* Orange for price */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .quantity-selector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .quantity-selector button {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 4px;
+            min-width: 30px; /* Ensure button size */
+        }
+        .quantity-selector input[type="number"] {
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 0 5px;
+            border-radius: 4px;
+            font-size: 1em;
+            -moz-appearance: textfield; /* Hide spin buttons in Firefox */
+        }
+        .quantity-selector input[type="number"]::-webkit-outer-spin-button,
+        .quantity-selector input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none; /* Hide spin buttons in Chrome/Safari */
+            margin: 0;
+        }
+
+        .product-card button.add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+            margin-top: auto;
+        }
+        .product-card button.add-to-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fresh Groceries Delivered to Your Door</h1>
+        <div class="product-grid">
+
+            <!-- Grocery Item 1: Apples -->
+         <div class="product-card">
+    <img src="c:\Users\VCS\Desktop\shoping web\images (4).jpeg" alt="Fresh Red Apples">
+    <h3>Fresh Red Apples</h3>
+    <p class="unit">Per kg</p>
+    <p class="price">₹62.00</p>
+
+    <div class="quantity-selector">
+        <button onclick="changeQuantity(this, -1)">-</button>
+        <input type="number" value="1" min="1" max="10" readonly>
+        <button onclick="changeQuantity(this, 1)">+</button>
+    </div>
+
+    <a href="https://www.flipkart.com/apple-imported/p/itm6bc3da45b11d8?pid=FRTG5KFRYAFPAA4P&lid=LSTFRTG5KFRYAFPAA4PVAQSIV&marketplace=FLIPKART&q=Fresh+Red+Apples&store=eat%2Fw2q%2Fb0g&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=9a551723-dfb7-4eb7-9b4e-a4cbfe7e4194.FRTG5KFRYAFPAA4P.SEARCH&ppt=sp&ppn=sp&ssid=bf8mj75lc00000001758792971908&qH=eea2a27142645353" target="_blank">
+        <button class="add-to-cart">BUY NOW</button>
+    </a>
+</div>
+
+<!-- Grocery Item 2: Milk -->
+<div class="product-card">
+    <img src="c:\Users\VCS\Desktop\shoping web\-original-imagvrdzmxfvuc7w.webp" alt="Fresh Milk 1L">
+    <h3>Fresh Milk (1 Liter)</h3>
+    <p class="unit">Per carton</p>
+    <p class="price">₹130.50</p>
+
+    <div class="quantity-selector">
+        <button onclick="changeQuantity(this, -1)">-</button>
+        <input type="number" value="1" min="1" max="5" readonly>
+        <button onclick="changeQuantity(this, 1)">+</button>
+    </div>
+
+    <a href="https://www.flipkart.com/sofit-soya-drink-naturally-sugar-free-1l/p/itmddf199490c042?pid=MLKEU6MR2ZN6NATC&lid=LSTMLKEU6MR2ZN6NATCEQQTPU&marketplace=FLIPKART&q=MILK+1LITTER&store=eat%2Fzn0&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=222a9e53-6a87-442e-8d0b-e173757fbef0.MLKEU6MR2ZN6NATC.SEARCH&ppt=sp&ppn=sp&ssid=n2585zpstc0000001758793291979&qH=661d84d80b1849f1" target="_blank">
+        <button class="add-to-cart">BUY NOW</button>
+    </a>
+</div>
+  
+         <div class="product-card">
+    <img src="c:\Users\VCS\Desktop\shoping web\1-all-natural-peanut-butter-crunchy-unsweetened-jar-1-nut-butter-original-imah8ajsthngfemz.webp" alt="Fresh Red Apples">
+    <h3>Natural Peanut Butter</h3>
+    <p class="unit">Per kg</p>
+    <p class="price">₹290.00</p>
+
+    <div class="quantity-selector">
+        <button onclick="changeQuantity(this, -1)">-</button>
+        <input type="number" value="1" min="1" max="10" readonly>
+        <button onclick="changeQuantity(this, 1)">+</button>
+    </div>
+
+    <a href="https://www.flipkart.com/apple-imported/p/itm6bc3da45b11d8?pid=FRTG5KFRYAFPAA4P&lid=LSTFRTG5KFRYAFPAA4PVAQSIV&marketplace=FLIPKART&q=Fresh+Red+Apples&store=eat%2Fw2q%2Fb0g&srno=s_1_5&otracker=search&otracker1=search&fm=Search&iid=9a551723-dfb7-4eb7-9b4e-a4cbfe7e4194.FRTG5KFRYAFPAA4P.SEARCH&ppt=sp&ppn=sp&ssid=bf8mj75lc00000001758792971908&qH=eea2a27142645353" target="_blank">
+        <button class="add-to-cart">BUY NOW</button>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    <script>
+        function changeQuantity(button, delta) {
+            const input = button.parentNode.querySelector('input[type="number"]');
+            let currentValue = parseInt(input.value);
+            let newValue = currentValue + delta;
+            const min = parseInt(input.min);
+            const max = parseInt(input.max);
+
+            if (newValue >= min && newValue <= max) {
+                input.value = newValue;
+            }
+        }
+    </script>
+</body>
+</html>
